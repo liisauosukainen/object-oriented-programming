@@ -10,7 +10,7 @@ namespace Example
 
         public Item()
         {
-            this.name = System.String.Empty;
+            this.name = String.Empty;
             this.id = counter++;
         }
 
@@ -22,7 +22,26 @@ namespace Example
 
         public override string ToString()
         {
-            return this.id + " : "+ this.name;
+            return this.id + " : " + this.name;
+        }
+
+        public override bool Equals(Object obj)
+        {
+            Item itemObj = obj as Item;
+            if (itemObj == null)
+            {
+                return false;
+            }
+            else
+            {
+                // compare only name
+                return this.name.Equals(itemObj.name);
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return this.name.GetHashCode();
         }
     }
 }
