@@ -4,6 +4,10 @@ namespace Example
 {
     class Program
     {
+        /*
+         * The Main method is the entry point of a C# application.
+         * When the application is started, the Main method is called at first.
+         */
         static void Main(string[] args)
         {
             CreateObjectsExample();
@@ -13,15 +17,21 @@ namespace Example
             Console.ReadKey();
         }
 
+        /*
+         * An example how to create objects (instances) of the class
+         */
         static void CreateObjectsExample()
         {
-            Console.WriteLine("\nCreating instances of Item class");
+            Console.WriteLine("\nCreating objects (instances) of Item class");
             Item firstItem = new Item();
             Console.WriteLine("1. item: "+ firstItem.name);
             Item secondItem = new Item("Kirja");
             Console.WriteLine("2. item: " + secondItem.name);
         }
 
+        /*
+         * An example how to use overridden Equals() -method to compare two objects of Item class.
+         */
         static void CompareItemsInArrayExample()
         {
             Item[] items = new Item[2];
