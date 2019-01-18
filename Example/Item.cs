@@ -14,6 +14,10 @@ namespace Example
             this.id = counter++;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
         public Item(string name)
         {
             this.name = name;

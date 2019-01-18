@@ -6,10 +6,20 @@ namespace Example
     {
         static void Main(string[] args)
         {
+            CreateObjectsExample();
             CompareItemsInArrayExample();
 
-            Console.Write("Press any key to continue...\n");
+            Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
+        }
+
+        static void CreateObjectsExample()
+        {
+            Console.WriteLine("\nCreating instances of Item class");
+            Item firstItem = new Item();
+            Console.WriteLine("1. item: "+ firstItem.name);
+            Item secondItem = new Item("Kirja");
+            Console.WriteLine("2. item: " + secondItem.name);
         }
 
         static void CompareItemsInArrayExample()
@@ -18,10 +28,10 @@ namespace Example
             items[0] = new Item("Aapinen");
             items[1] = new Item("aapinen");
 
-            Console.WriteLine("Checking if objects are equal");
+            Console.WriteLine("\nChecking if objects are equal");
             if (items[0].Equals(items[1]))
             {
-                Console.WriteLine(items[0].name +" == "+ items[1].name);
+                Console.WriteLine(items[0].name + " == " + items[1].name);
             }
             else
             {
