@@ -11,6 +11,7 @@ namespace Example
         static void Main(string[] args)
         {
             CreateObjectsExample();
+            CreatePersonsExample();
             CompareItemsInArrayExample();
 
             Console.WriteLine("\nPress any key to continue...");
@@ -27,6 +28,20 @@ namespace Example
             Console.WriteLine("1. item: "+ firstItem.name);
             Item secondItem = new Item("Kirja");
             Console.WriteLine("2. item: " + secondItem.name);
+        }
+
+        /*
+         * Using properties
+         */
+        static void CreatePersonsExample()
+        {
+            Console.WriteLine("\nCreating object (instance) of Person class, " +
+                              "where properties are used to read and write private fields.");
+            Person firstPerson = new Person();
+            firstPerson.LastName = "Virtanen";
+            firstPerson.Age = 23;
+            Console.WriteLine("name: " + firstPerson.LastName);
+            Console.WriteLine("age: " + firstPerson.Age);
         }
 
         /*
