@@ -39,5 +39,23 @@ namespace Example
             _age = -1;
             _lastName = String.Empty;
         }
+
+        // method returns details about the person object
+        // if given name match to object's name
+        public Person GetPersonInfo(string name)
+        {
+            if (this._lastName.Equals(name))
+            {
+                return this;
+            }
+
+            // return null, because names don't match
+            return null;
+        }
+
+        public override string ToString()
+        {
+            return $"{this._lastName}, {this._age}";
+        }
     }
 }

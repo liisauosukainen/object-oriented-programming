@@ -45,14 +45,18 @@ namespace Example
         {
             // Convert type from Object to Item
             Item itemObj = obj as Item;
+
             if (itemObj == null)
             {
                 return false;
             }
             else
             {
-                // compare only name
-                return this.name.Equals(itemObj.name);
+                // compare name
+                bool isNameEqual = this.name.Equals(itemObj.name);
+                // compare id
+                bool isIdEqual = this.id.Equals(itemObj.id);
+                return isNameEqual && isIdEqual;
             }
         }
 

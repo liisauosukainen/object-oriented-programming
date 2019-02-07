@@ -40,8 +40,18 @@ namespace Example
             Person firstPerson = new Person();
             firstPerson.LastName = "Virtanen";
             firstPerson.Age = 23;
+
             Console.WriteLine("name: " + firstPerson.LastName);
             Console.WriteLine("age: " + firstPerson.Age);
+
+            if (firstPerson.GetPersonInfo("Virtanen") != null)
+            {
+                Console.WriteLine("Information found: " + firstPerson.GetPersonInfo("Virtanen").ToString());
+            }
+            else
+            {
+                Console.WriteLine("Information about the person not found");
+            }
         }
 
         /*
