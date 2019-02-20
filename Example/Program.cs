@@ -12,12 +12,13 @@ namespace Example
          */
         static void Main(string[] args)
         {
-            CreateObjectsExample();
-            CreatePersonsExample();
-            CompareItemsInArrayExample();
-            CheckItemsInListExample();
-            CheckItemsInHashtableExample();
-            CheckItemsInDictionaryExample();
+            //CreateObjectsExample();
+            //CreatePersonsExample();
+            //CompareItemsInArrayExample();
+            //CheckItemsInListExample();
+            //CheckItemsInHashtableExample();
+            //CheckItemsInDictionaryExample();
+            EnumTest();
 
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
@@ -92,7 +93,7 @@ namespace Example
             {
                 Console.WriteLine($"{tool.id}: {tool.name} in the List");
             }
-
+            
             if (items.Contains(nail))
             {
                 Console.WriteLine($"{nail.name} found in the List");
@@ -142,6 +143,12 @@ namespace Example
             {
                 Console.WriteLine("{0} = {1}", kvp.Key, kvp.Value);
             }
+        }
+
+        static void EnumTest()
+        {
+            EnumTest enumTest = new EnumTest();
+            enumTest.PrintDetails();
         }
     }
 }
