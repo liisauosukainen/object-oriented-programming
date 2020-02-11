@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Example
 {
+    // Custom exception
     public class WordListNotFoundException : Exception
     {
         public WordListNotFoundException(string message) : base(message)
@@ -16,6 +17,13 @@ namespace Example
     {
         private string filePath;
 
+        // Constructor
+        public FileManager()
+        {
+            this.filePath = String.Empty;
+        }
+
+        // Constructor
         public FileManager(string filePath)
         {
             this.filePath = String.Empty;
@@ -30,10 +38,14 @@ namespace Example
             return content;
         }
 
+        /* Method reads file from a local 
+         * directory path.
+         */
         private string ReadFile()
         {
             if (!File.Exists(filePath))
             {
+                // Throw exception if file does not exists
                 throw new FileNotFoundException("File not available");
             }
 
