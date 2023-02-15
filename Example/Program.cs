@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace Example
 {
@@ -12,13 +15,15 @@ namespace Example
          */
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             //CreateObjectsExample();
             //CreatePersonsExample();
             //CompareItemsInArrayExample();
             //CheckItemsInListExample();
             //CheckItemsInHashtableExample();
             //CheckItemsInDictionaryExample();
-            EnumTest();
+            //EnumTest();
 
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();

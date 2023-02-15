@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Peppi Pitkätossu",
+        "author": "Astrid Lindgren",
+        "price": 19.90
+    },
+    {
+        "title": "Muumit",
+        "author": "Tove Jansson",
+        "price": 29.90
+    },
+    {
+        "title": "Peppi Pitkätossun keittokirja",
+        "author": "Astrid Lindgren",
+        "price": 18.90
+    },
+    {
+        "title": "Ella ja kaverit tulevaisuuden toivoina",
+        "author": "Timo Parvela",
+        "price": 16.90
+    },
+    {
+        "title": "Miina ja Manu reporttereina",
+        "author": "Jari Koivisto",
+        "price": 3.95
+    },
+    {
+        "title": "Tiitiäisen satupuu",
+        "author": "Kirsi Kunnas",
+        "price": 12.95
+    }
+
+]
