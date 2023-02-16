@@ -17,7 +17,7 @@ namespace Example
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            //CreateObjectsExample();
+            CreateObjectsExample();
             //CreatePersonsExample();
             //CompareItemsInArrayExample();
             //CheckItemsInListExample();

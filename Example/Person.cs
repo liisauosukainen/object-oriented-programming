@@ -37,7 +37,7 @@ namespace Example
         public Person()
         {
             _age = -1;
-            _lastName = String.Empty;
+            _lastName = string.Empty;
         }
 
         // method returns details about the person object

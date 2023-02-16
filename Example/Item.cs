@@ -13,7 +13,7 @@ namespace Example
          */
         public Item()
         {
-            this.name = String.Empty;
+            this.name = string.Empty;
             // set id equal to counter
             this.id = counter++;
         }
@@ -41,7 +41,7 @@ namespace Example
          * Override the Equals method.
          * Method compares two objects and returns true or false.
          */
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             // Convert type from Object to Item
             Item itemObj = obj as Item;
