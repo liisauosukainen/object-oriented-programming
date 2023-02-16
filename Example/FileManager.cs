@@ -20,18 +20,18 @@ namespace Example
         // Constructor
         public FileManager()
         {
-            this.filePath = String.Empty;
+            this.filePath = string.Empty;
         }
 
         // Constructor
         public FileManager(string filePath)
         {
-            this.filePath = String.Empty;
+            this.filePath = string.Empty;
         }
 
         public string ReadWords()
         {
-            string content = String.Empty;
+            string content = string.Empty;
 
             content = ReadFile();
 
