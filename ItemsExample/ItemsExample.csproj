@@ -8,11 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Book.cs" />
     <Compile Remove="EnumTest.cs" />
+    <Compile Remove="FileManager.cs" />
+    <Compile Remove="Person.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <None Remove="myBooks.json" />
   </ItemGroup>
 
 </Project>
