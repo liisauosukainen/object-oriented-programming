@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Example
+namespace ItemsExample
 {
     class Item
     {
@@ -9,7 +9,7 @@ namespace Example
         private static int counter = 0;
 
         /*
-         * Default Constructor, no parameters
+         * Default constructor, no parameters
          */
         public Item()
         {

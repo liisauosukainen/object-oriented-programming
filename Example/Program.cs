@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Example
+namespace ItemsExample
 {
     class Program
     {
@@ -16,53 +16,28 @@ namespace Example
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("Project: ItemsExample");
 
-            CreateObjectsExample();
-            //CreatePersonsExample();
-            //CompareItemsInArrayExample();
-            //CheckItemsInListExample();
-            //CheckItemsInHashtableExample();
-            //CheckItemsInDictionaryExample();
-            //EnumTest();
+            CreateItemsExample();
+            CompareItemsInArrayExample();
+            CheckItemsInListExample();
+            CheckItemsInHashtableExample();
+            CheckItemsInDictionaryExample();
 
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
         }
 
         /*
-         * An example how to create objects (instances) of the class
+         * An example how to create objects (instances) of the Item class
          */
-        static void CreateObjectsExample()
+        static void CreateItemsExample()
         {
             Console.WriteLine("\nCreating objects (instances) of Item class");
             Item firstItem = new Item();
             Console.WriteLine("1. item: "+ firstItem.name);
             Item secondItem = new Item("Kirja");
             Console.WriteLine("2. item: " + secondItem.name);
-        }
-
-        /*
-         * Using properties
-         */
-        static void CreatePersonsExample()
-        {
-            Console.WriteLine("\nCreating object (instance) of Person class, " +
-                              "where properties are used to read and write private fields.");
-            Person firstPerson = new Person();
-            firstPerson.LastName = "Virtanen";
-            firstPerson.Age = 23;
-
-            Console.WriteLine("name: " + firstPerson.LastName);
-            Console.WriteLine("age: " + firstPerson.Age);
-
-            if (firstPerson.GetPersonInfo("Virtanen") != null)
-            {
-                Console.WriteLine("Information found: " + firstPerson.GetPersonInfo("Virtanen").ToString());
-            }
-            else
-            {
-                Console.WriteLine("Information about the person not found");
-            }
         }
 
         /*
@@ -148,12 +123,6 @@ namespace Example
             {
                 Console.WriteLine("{0} = {1}", kvp.Key, kvp.Value);
             }
-        }
-
-        static void EnumTest()
-        {
-            EnumTest enumTest = new EnumTest();
-            enumTest.PrintDetails();
         }
     }
 }

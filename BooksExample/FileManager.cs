@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace Example
+namespace BooksExample
 {
     // Custom exception
     public class WordListNotFoundException : Exception
